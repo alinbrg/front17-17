@@ -109,3 +109,12 @@ function getYoungestUser(arr) {
 }
 
 // console.log(getYoungestUser(userArr));
+
+const ages = userArr.map((el) => el.age); //მხოლოდ ასაკის მასივის შექმნა
+console.log(ages);
+const minAge = Math.min(...ages); //უმცირესი ასაკის პოვნა
+console.log(minAge);
+
+const youngestUser = userArr.find((el) => el.age === minAge); //იუზერი, რომლის ასაკიც ემთხვევა უმცირესს
+
+console.log(youngestUser);
